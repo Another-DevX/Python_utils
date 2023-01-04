@@ -8,11 +8,11 @@ if __name__ ==  '__main__':
     def response_input():
         response = int(input(f'Select a program \n--get_factorial__1 \n--get_fibonacci_sequence__2 '))
         try:
-            assert response == 1 or response == 2
+            assert response == 1 or response == 2, "the response is'nt 1 or 2"
             run(response)
         except AssertionError as e:
             print(e)
-            print("Escribe un valor valido")
+            print("Put a valid value")
             response_input()
 
     def run(response): 
