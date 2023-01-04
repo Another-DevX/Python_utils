@@ -12,10 +12,9 @@ def get_factorial(value):
     return value * get_factorial(value - 1)
         
 
-def run():
-    value = 5
+def run_get_factorial(value):
     print(get_factorial(value))
         
 
 if __name__ ==  '__main__':
-    run()
+    run_get_factorial(5)
