@@ -1,13 +1,13 @@
-from Algoritmic_complexity import lineal_research, binary_research, comparasion,bubble_sort,insertion_sort
+from Algoritmic_complexity import lineal_research, binary_research, comparasion,bubble_sort,insertion_sort, merge_sort,merge_sort_compact
 
 import random
 
 if __name__ ==  '__main__':
 
     def response_input():
-        response = int(input(f'Select a program \n--lineal_research__1 \n--binary_research__2 \n--comparasion__3 \n--bubble_sort__4 \n--insertion_sort__5'))
+        response = int(input(f'Select a program \n--lineal_research__1 \n--binary_research__2 \n--comparasion__3 \n--bubble_sort__4 \n--insertion_sort__5 \n--merge-sort__6 \n --merge_sort_compact__7'))
         try:
-            assert response in (1,5)  , "the response is'nt in 1 to 5"
+            assert response in (1,7)  , "the response is'nt in 1 to 7"
             run(response)
         except AssertionError as e:
             print(e)
@@ -25,4 +25,8 @@ if __name__ ==  '__main__':
             bubble_sort.run()
         elif response == 5:
             insertion_sort,run()
+        elif response == 6:
+            merge_sort,run()
+        elif response == 7:     
+            merge_sort_compact,run()
     response_input()
