@@ -1,6 +1,6 @@
 import random
 
-#This script is a examplo for a O(n) complexity algoritm, sequential
+#This script is an example of a O(n) complexity algoritm, sequential
     
 def linear(searchingList, objetive):
     match = False
@@ -11,7 +11,7 @@ def linear(searchingList, objetive):
             return match
 
 def run():
-    objetive = int(input("Put te objetive"))
+    objetive = int(input("Put the objetive"))
     list_length = int(input("Put the list lenght"))
     
     searchingList =[random.randint(0,100) for i in range(list_length)]

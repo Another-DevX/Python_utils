@@ -1,6 +1,6 @@
 import random
 
-#This script is a example for a O(log n) complexity algoritm, logaritm
+#This script is an example of a O(log n) complexity algoritm, logaritm
 
 def binary(researchList, start, end, objetive):
 
@@ -18,7 +18,7 @@ def binary(researchList, start, end, objetive):
     
     
 def run():
-    objetive = int(input("Put te objetive"))
+    objetive = int(input("Put the objetive"))
     list_length = int(input("Put the list lenght"))
 
     searchingList =sorted([random.randint(0,100) for i in range(list_length)])
