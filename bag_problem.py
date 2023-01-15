@@ -1,6 +1,5 @@
 
 def solve_problem(values, weights, bag,n):
-    print(f"Bag {bag}")
     if bag == 0 or n == 0:
         return 0
     elif weights[n-1] > bag:
